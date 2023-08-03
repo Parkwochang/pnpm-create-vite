@@ -1,4 +1,5 @@
-import React from 'react'
+import { Api } from '@pnpm-create-vite/apis'
+import React, { useEffect } from 'react'
 import { BrowserRouter, Outlet, Route, Routes } from 'react-router-dom'
 
 const Layout = () => {
@@ -14,6 +15,16 @@ const Layout = () => {
 }
 
 const App = () => {
+
+  const apiInstance = new Api('https://pokeapi.co/api/v2', 5000)
+
+  useEffect(() => {
+    (async () => {
+      const data = await apiInstance.get('/pokemon/', { limit: 300, offset: 0 })
+      console.log(data, 'data :::')
+    })()
+  }, [])
+
   return (
     <>HIII</>
     // <BrowserRouter>
