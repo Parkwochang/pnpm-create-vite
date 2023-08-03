@@ -4,8 +4,9 @@
   "version": "0.0.0",
   "main": "index.s",
   "engines": {
-    "node": ">16.14.2",
-    "pnpm": ">=7.9.0"
+    "node": ">=18.16.0",
+    "pnpm": ">=7.9.0",
+    "npm": "pnpm only"
   },
   "workspaces": [
     "packages/*"
