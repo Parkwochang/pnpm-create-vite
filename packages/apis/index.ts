@@ -5,6 +5,7 @@ export const Instance = (baseURL: string, timeout: number, headers?: any) => axi
   timeout
 })
 
+// ! 다음 클래스로 이어 받아서 api 컨트롤러 만들면 좋을 듯
 export class Api {
   private axios: AxiosInstance;
   constructor(baseUrl: string, timeout: number) {
