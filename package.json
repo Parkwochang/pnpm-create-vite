@@ -18,8 +18,9 @@
   "scripts": {
     "preinstall": "pnpm dlx only-allow pnpm",
     "front": "pnpm -F @pnpm-create-vite/container",
-    "common": "pnpm -F @my-monorepo/common",
-    "apis": "pnpm -F @my-monorepo/apis",
+    "common": "pnpm -F @pnpm-create-vite/common",
+    "apis": "pnpm -F @pnpm-create-vite/apis",
+    "next": "pnpm -F @pnpm-create-vite/nextjs",
     "start": "pnpm -r start"
   },
   "devDependencies": {
